@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #eef3f8;
+  color: #0f2a43;
+}
+
+.bar {
+  background: #0f2a43;
+  padding: 0 6vw;
+}
+
+ul {
+  list-style: none;
+
+}
+
+.menu {
+  display: flex;
+}
+
+.menu > li{
+position: relative;
+
+}
+
+.menu a {
+  display: block;
+  padding: 16px 20px;
+  color: #e6f0f7;
+  text-decoration: none;
+}
+
+.menu a:hover, .menu a:focus {
+  background: #2bb3a3;
+
+}
+
+.sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background: #16395a;
+  display: none;
+}
+
+.dropdown:hover .sub, .dropdown:focus-within .sub {
+  display: block;
+  .sub li{
+    margin-top: 10px;
+  }
+}
+
+.wrap {
+  padding: 40px 6vw;
+}
+
+
